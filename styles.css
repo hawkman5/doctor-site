@@ -83,7 +83,7 @@ body {
 
     .navbar-nav li {
         opacity: 0; 
-        /* hides the navbar at the load of page */
+        /* hides the navbar links at the load of page */
     }
 
     .burger {
@@ -91,7 +91,20 @@ body {
 
     }
 
-    .navbar-active {
-        transform: translateX(0%);
+    
+}
+
+.navbar-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
     }
 }
