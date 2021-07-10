@@ -7,6 +7,46 @@
 body {
     font-family: 'Lato', sans-serif;
     background-color: rgb(226, 226, 226);
+    /* background-image: /beach-video.mp4;
+    background-size: cover; */
+}
+
+#videoBG {
+    position: fixed;
+    z-index: -1;
+}
+@media (min-aspect-ratio: 16/9) {
+    #videoBG {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #videoBG {
+        width: auto;
+        height: 100%;
+    }
+}
+@media (max-width: 768px) {
+    #videoBG {
+        display: none;
+    }
+    body {
+        background-image: url("beach-shot.png");
+        background-size: 100vh 100vh;
+    }
+}
+
+#sample-text {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    right: 20%;
+    text-align: center;
+    color:rgb(226, 226, 226);
+    background-color: rgba(93, 73, 84, 0.7);
+    z-index: 1;
+    
 }
 
 .navbar {
@@ -67,7 +107,7 @@ body {
     body {
         overflow-x: hidden;
     }
-    
+
     .navbar-nav {
         position: absolute;
         right: 0px;
@@ -81,6 +121,7 @@ body {
         transform: translateX(100%); 
         /* Transform moves the navbar off the screen to the right hand side, and the above overflow-x hidden hides the transformed navbar so that you cannot scroll to it. */
         transition: transform 0.5s ease-in;
+        z-index: 2;
     }
 
     .navbar-nav li {
