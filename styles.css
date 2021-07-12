@@ -104,9 +104,9 @@ body {
 }
 
 @media screen and (max-width:768px) {
-    body {
-        overflow-x: hidden;
-    }
+    html, body {
+        overflow-x: hidden; 
+      }
 
     .navbar-nav {
         position: absolute;
