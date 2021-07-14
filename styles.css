@@ -54,7 +54,8 @@ body {
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: #5D4954;
+    /* background-color: #5D4954; */
+    background-color: #4f5885;
 }
 
 .logo a {
@@ -109,6 +110,97 @@ html, body,
     transition: all 0.3s ease;
 }
 
+/* FOOTER CSS DIRECT COPY FROM GOOGLE HOMEPAGE PROJECT */
+/* FOOTER NAV */
+.footer-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    /* background-color: #f2f2f2; THIS IS THE CORRECT COLOR */
+}
+
+.footer-item {
+    list-style: none;
+    /* margin-right: 2rem; */
+}
+
+.footer-item a {
+    text-decoration: none;
+    color: #70757a;
+}
+
+.footer-item a:hover {
+    text-decoration:underline;
+}
+
+.first-row {
+    flex-grow: 1;
+    width: 33%;
+    text-align: center;
+
+}
+
+.line {
+    /* background-color: #70757a; */
+    flex-grow: 1;
+    width: 100%;
+    height: 1px;
+    margin-top: 10px;
+}
+
+.line div {
+    background-color: #70757a;
+    width: 100%;
+    height: 2px;
+}
+
+.second-row {
+    flex-grow: 1;
+    width: 25%;
+    text-align: center;
+}
+
+.third-row {
+    flex-grow: 1;
+    width: 33%;
+    text-align: center;
+    margin-bottom: 7px;
+}
+/* .footer-item:first-child {
+    margin-left: 2rem;
+} */
+
+/* .footer-item:nth-child(4){
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+/* .footer-item:nth-child(7){
+    margin-right: 2rem;
+} */
+
+/* .footer-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+/* .footer-item a img {
+    height: 0.9rem;
+    width: auto;
+    margin-right: 5px;
+} */
+
+/* -----------END DIRECT FOOTER COPY----------- */
+
+
+
 @media screen and (max-width:1200px) {
     .navbar-nav {
         width: 60%;
@@ -118,7 +210,7 @@ html, body,
 @media screen and (max-width:768px) {
 
     /* added .fix-scroll div to try and fix the mobile phone scroll, but not working */
-    html, body, {
+    html, body {
         overflow-x: hidden; 
       }
     
