@@ -84,6 +84,18 @@ body {
     font-size: 14px; 
 }
 
+.navbar-item:hover {
+    background-color: coral;
+    color: cornflowerblue;
+}
+
+html, body, 
+
+.current-nav {
+    background-color: blue;
+    /* height: 100%; */
+}
+
 .burger {
     display: none;
     cursor: pointer;
@@ -104,9 +116,15 @@ body {
 }
 
 @media screen and (max-width:768px) {
-    html, body {
+
+    /* added .fix-scroll div to try and fix the mobile phone scroll, but not working */
+    html, body, {
         overflow-x: hidden; 
       }
+    
+    .fix-scroll {
+        overflow-x: hidden;
+    }  
 
     .navbar-nav {
         position: absolute;
@@ -118,7 +136,7 @@ body {
         flex-direction: column;
         align-items: center;
         width: 50%;
-        transform: translateX(100%); 
+        transform: translateX(101%); 
         /* Transform moves the navbar off the screen to the right hand side, and the above overflow-x hidden hides the transformed navbar so that you cannot scroll to it. */
         transition: transform 0.5s ease-in;
         z-index: 2;
