@@ -39,12 +39,12 @@ body {
 
 #sample-text {
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 20%;
     right: 20%;
     text-align: center;
     color:rgb(226, 226, 226);
-    background-color: rgba(93, 73, 84, 0.7);
+    background-color: rgba(187, 207, 223, 0.4);
     z-index: 1;
     
 }
@@ -55,7 +55,25 @@ body {
     align-items: center;
     min-height: 8vh;
     /* background-color: #5D4954; */
-    background-color: #4f5885;
+    /* background-color: #4f5885; */
+    background-color: #3aa8e7;
+    /* background code below is from uigradients website */
+    background: #2980B9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #bbcfdf, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #bbcfdf, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.logo {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+.logo div {
+    display: flex;
+    flex-direction: column;
+    /* just created this to spread out words... doesnt work yet */
 }
 
 .logo a {
@@ -66,19 +84,30 @@ body {
     text-decoration: none;
 }
 
+.logo a img {
+    max-height: 4em;
+}
 
 .navbar-nav {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 40%;
+    height: 122px;
 }
 
 .navbar-item {
     list-style: none;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .navbar-item a {
-    color: rgb(226, 226, 226);
+    /* color: rgb(226, 226, 226); */
+    /* color: #dfe6e9; */
+    color: #364156;
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
@@ -86,14 +115,20 @@ body {
 }
 
 .navbar-item:hover {
-    background-color: coral;
-    color: cornflowerblue;
+    background-color: #ffaf00;
+
+}
+
+.navbar-item:hover a {
+    color: #607094;
 }
 
 html, body, 
 
+
+/* consider removing this class */
 .current-nav {
-    background-color: blue;
+    /* background-color: blue; */
     /* height: 100%; */
 }
 
@@ -121,8 +156,12 @@ html, body,
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: #f2f2f2;
+    /* background-color: #f2f2f2; */
     /* background-color: #f2f2f2; THIS IS THE CORRECT COLOR */
+    /* background code below is from uigradients website */
+    background: #2980B9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #bbcfdf, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #bbcfdf, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .footer-item {
@@ -162,15 +201,19 @@ html, body,
 
 .second-row {
     flex-grow: 1;
-    width: 25%;
+    width: 14%;
     text-align: center;
 }
 
-.third-row {
+/* .third-row {
     flex-grow: 1;
     width: 33%;
     text-align: center;
     margin-bottom: 7px;
+} */
+
+.skelDyn {
+    max-width: 8em;
 }
 /* .footer-item:first-child {
     margin-left: 2rem;
