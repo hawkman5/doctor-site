@@ -71,4 +71,4 @@ async function getWaitTime() {
 }
 
 getWaitTime();
-setInterval(getWaitTime, 120000)
+setInterval(getWaitTime, 600000)
