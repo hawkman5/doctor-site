@@ -11,6 +11,10 @@ body {
     background-size: cover; */
 }
 
+.er {
+    color: red;
+}
+
 #videoBG {
     position: fixed;
     z-index: -1;

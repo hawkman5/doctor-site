@@ -43,19 +43,32 @@ navSlide();
 // new code from youtube video
 // https://www.youtube.com/watch?v=Yp9KIcSKTNo
 
-async function getData() {
-    return (await fetch("https://www.sebastianrivermedical.org/data/erwait?_format=json")).json();
-  }
+// async function getData() {
+//     return (await fetch("https://www.sebastianrivermedical.org/data/erwait?_format=json")).json();
+//   }
   
-  document.addEventListener("DOMContentLoaded", async () => {
-    let erWait = [];
+//   document.addEventListener("DOMContentLoaded", async () => {
+//     let erWait = [];
 
-    try {
-        erWait = await getData();
-    } catch (e) {
-        console.log("Error!");
-        console.log(e);
-    }
+//     try {
+//         erWait = await getData();
+//     } catch (e) {
+//         console.log("Error!");
+//         console.log(e);
+//     }
 
-    console.log(erWait);
-  });
+//     console.log(erWait);
+//   });
+
+// ................................
+// new fetch async function after learning more and watching the code train video with grabbing data from the International Space Station API website
+const er_api_url = "https://www.sebastianrivermedical.org/data/erwait?_format=json";
+async function getWaitTime() {
+  const response = await fetch(er_api_url);
+  const data = await response.json();
+  document.getElementById('min').textContent = data.minutes;
+  console.log(data);
+}
+
+getWaitTime();
+setInterval(getWaitTime, 120000)
