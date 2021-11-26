@@ -4,51 +4,53 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <!-- This is the original Css link above -->
+    <link rel="stylesheet" href="mobile-test.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
     <title>Kirk Maes, MD</title>
 </head>
 <body>
-<div class="fix-scroll">
-    <nav class="navbar">
+    <header>
+        <div class="virus-alert">
+            <p>We are open for all your health care needs. Visitor restrictions still apply. <a href="https://www.sebastianrivermedical.org/services-directory/covid-19">Learn More</a></p>
+        </div>
         <div class="logo">
             <a href="/">
-                <img src="logo2.png" alt="Coastal Joint & Sports Medicine Logo Picture">
+                <img src="logo2.png" alt="Coastal Joint & Sports Medicine Logo">
+                <div>
+                    <p>Coastal Joint &</p>
+                    <p>Sports Medicine</p>  
+                </div>
             </a>
-            <div>
-                <p>Coastal Joint &</p>
-                <p>Sports Medicine</p>  
-            </div>
-             
         </div>
-        <ul class="navbar-nav">
-            <li class="navbar-item current-nav">
-                <a href="index.html">Home</a>
-            </li>
-            <li class="navbar-item">
-                <a href="/about.html">About</a>
-            </li>
-            <li class="navbar-item">
-                <a href="#">Services</a>
-            </li>
-            <li class="navbar-item">
-                <a href="#">Insurance</a>
-            </li>
-            <li class="navbar-item">
-                <a href="#">SRMC</a>
-            </li>
-            <li class="navbar-item">
-                <a href="#">Contact</a>
-            </li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
+        <nav>
+            <ul id="primary-navigation" class="primary-navigation flex">
+                <li class="active">
+                    <a href="index.html">
+                        <span aria-hidden="true">00</span>Home
+                    </a>
+                <li>
+                    <a href="our-staff.html">
+                        <span aria-hidden="true">01</span>Our Staff
+                    </a>
+                <li>
+                    <a href="services.html">
+                        <span aria-hidden="true">02</span>Services
+                    </a>
+                <li>
+                    <a href="insurance.html">
+                        <span aria-hidden="true">03</span>Insurance
+                    </a>
+                <li>
+                    <a href="contact.html">
+                        <span aria-hidden="true">04</span>Contact
+                    </a>
+            </ul>
+        </nav> 
+    </header>
     
     <div id="sample-text">
         <h1>Welcome to Kirk Maes MD Orthopedics</h1>
