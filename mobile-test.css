@@ -8,7 +8,78 @@ html {
     box-sizing: border-box;
 }
 
-img {
+body{
+    background-image:url("beach.jpeg");
+    background-attachment:fixed;
+    background-repeat: repeat;
+    background-size: cover;
+
+    font-family: 'Lato', sans-serif;
+}
+
+/* primary header */
+/* Following Kevin Powell */
+.logo {
+    margin: 1rem;
+    max-width: 10rem;
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: auto;
     display: block;
-    max-width: 100
+}
+
+.primary-header {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.primary-navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: hsl(0 0% 0% / 0.5);
+}
+/* If @supports doesnt work, it defaults to the above^ */
+
+ /* This backdrop filter is currently not supported on all browsers...check to make sure this is still readable in different browsers, this @supports check to see if it is compatible with different browsers, if not it defaults to the .primary-navigation above this */
+@supports (backdrop-filter: blur(1rem)) {
+    .primary-navigation {
+        background: hsl(0 0% 100% / 0.1);
+        backdrop-filter: blur(0.5rem);
+    }
+}
+
+.primary-navigation a {
+    text-decoration: none;
+    color: black;
+}
+
+
+@media (max-width: 35em) { 
+    /* Kevin arbitrarily uses 35em above, I might need to change it to fit my project */
+    .primary-navigation {
+        --gap: 3em;
+
+        position: fixed;
+        inset: 0 0 0 30%;
+
+        flex-direction: column;
+        padding: min(30vh, 10rem) 2rem;
+        /* This padding is explained at the 14 minute mark */
+    }
+}
+
+
+
+
+
+
+
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem); 
+    /* --gap is a custom property that has not been defined yet */
 }
