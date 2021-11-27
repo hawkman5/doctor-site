@@ -35,6 +35,10 @@ body{
     justify-content: space-between;
 }
 
+.mobile-nav-toggle {
+    display: none;
+}
+
 .primary-navigation {
     list-style: none;
     padding: 0;
@@ -63,13 +67,28 @@ body{
         --gap: 3em;
 
         position: fixed;
+        z-index: 1000;
         inset: 0 0 0 30%;
 
         flex-direction: column;
         padding: min(30vh, 10rem) 2rem;
         /* This padding is explained at the 14 minute mark */
     }
+
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        background: url("menu_black_24dp.svg");
+        background-repeat: no-repeat;
+        border: 0;
+        width: 2rem;
+        aspect-ratio: 1;
+        top: 2rem;
+        right: 2rem;
+    }
 }
+
 
 
 

@@ -1,3 +1,13 @@
+// Kevin Powell Nav
+const primaryNav = document.querySelector(".primary-navigation");
+const navToggle = document.querySelector(".mobile-nav-toggle");
+
+
+
+
+
+
+// Old nav...consider deleting
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.navbar-nav');
