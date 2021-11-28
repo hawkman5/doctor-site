@@ -9,6 +9,7 @@ html {
 }
 
 body{
+    margin: 0;
     background-image:url("beach.jpeg");
     background-attachment:fixed;
     background-repeat: repeat;
@@ -19,10 +20,28 @@ body{
     overflow-x: hidden;
 }
 
+/* Virus Alet Box */
+.virus-alert {
+	background: #ec2e57;
+	color: #fff;
+	width: 100%;
+    margin-bottom: 1px;
+	padding: 5px 10px;
+	font-size: 16px;
+	text-align: center;
+	font-weight: bold;
+    font-family: Inter, sans-serif;
+}
+.virus-alert a {
+	color: #fff;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
 /* primary header */
 /* Following Kevin Powell */
 .logo {
-    margin: 1rem;
+    /* margin: 1rem; */
     max-width: 10rem;
     min-width: 10rem;
 }
@@ -60,7 +79,8 @@ body{
 
 .primary-navigation a {
     text-decoration: none;
-    color: black;
+    color: #fff;
+    font-size: 2rem;
 }
 
 
@@ -94,12 +114,13 @@ body{
         background-color: transparent;
         background-image: url("menu_white_24dp.svg");
         /* consider putting this svg into the actual html because it seems like it is difficult to style it this way */
+        background-size: 75%;
         background-repeat: no-repeat;
         border: 0;
-        width: 2rem;
+        width: 5rem;
         aspect-ratio: 1;
-        top: 2rem;
-        right: 2rem;
+        top: 5rem;
+        right: 1rem;
     }
 
     .mobile-nav-toggle[aria-expanded="true"] {
@@ -113,9 +134,9 @@ body{
 /* now that I fixed logo, my nav gets cut off on the right size when resizing my screen smaller */
 @media (min-width: 35em) {
     .primary-navigation {
-        --gap: clamp(1.5rem, 5vw, 3rem);
-        padding-block: 2rem;
-        padding-inline: clamp(3rem, 8vw, 10rem);
+        --gap: clamp(0.5rem, 5vw, 3rem);
+        padding-block: 1rem;
+        padding-inline: clamp(1rem, 5vw, 10rem);
     }
 }
 
