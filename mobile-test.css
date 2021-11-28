@@ -60,6 +60,42 @@ select {
 /* End of reset */
 /* ----------------------------------------------------------- */
 
+/* ------------------- */
+/* Utility classes     */
+/* Kevin Powell Scrimba */
+/* ------------------- */
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem); 
+    /* --gap is a custom property that has not been defined yet */
+}
+
+.grid {
+    display: grid;
+    gap: var(--gap, 1rem);
+}
+
+.container {
+    padding-inline: 2em;
+    margin-inline: auto;
+    max-width: 80rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* --------------------------------------------- */
+
 /* My CSS */
 
 body{
@@ -195,11 +231,7 @@ body{
 
 
 
-.flex {
-    display: flex;
-    gap: var(--gap, 1rem); 
-    /* --gap is a custom property that has not been defined yet */
-}
+
 
 /* Notes from 11/27/21 after finishing the navbar:
 
