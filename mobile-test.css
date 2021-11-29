@@ -1,9 +1,24 @@
-/* 
--------------------------------------
-RESET
--------------------------------------*/
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+
+:root {
+    --clr-dark: 195 4% 18%;
+    --clr-gray: 48 3% 68%;
+    --clr-blue: 202 23% 30%;
+    --clr-tan: 35 34% 87%;
+    --clr-white: 0 0% 100%;
+}
+
+
+
+
+
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
 /* https://piccalil.li/blog/a-modern-css-reset/ */
-/* This reset has some more stuff in it too and a very interesting explanation of the reset */
 
 /* Box sizing */
 *,
