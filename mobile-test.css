@@ -172,6 +172,7 @@ body{
 .primary-header {
     align-items: center;
     justify-content: space-between;
+    
 }
 
 .mobile-nav-toggle {
@@ -196,7 +197,8 @@ body{
 
 .primary-navigation a {
     text-decoration: none;
-    color: #fff;
+    /* color: #fff; */
+    color: var(--clr-dark);
     font-size: 2rem;
 }
 
@@ -268,3 +270,5 @@ body{
     -add accessibility throughout the whole website once it is finished
     -add in custom fonts and sizing to better organize css(im afraid my media queries using em measurements might be weird without doing this
 */
+
+
