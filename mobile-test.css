@@ -8,6 +8,10 @@
     --clr-blue: 202 23% 30%;
     --clr-tan: 35 34% 87%;
     --clr-white: 0 0% 100%;
+
+    --ff-primary: 'Roboto', sans-serif;
+    --ff-heading: 'Oswald', sans-serif;
+    --ff-accent: 'Raleway', sans-serif;
 }
 
 /* ------------------- */
@@ -71,6 +75,24 @@ select {
 /* End of reset */
 /* ----------------------------------------------------------- */
 
+/* Setting Up Fonts -Kevin Powell */
+body{
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    /* font-size in figma is 14px. 1rem is 16px so this is a little larger */
+    font-size: 1rem; 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: var(--ff-heading);
+    font-weight: 700;
+    line-height: 1;
+}
+
 /* ------------------- */
 /* Utility classes     */
 /* Kevin Powell Scrimba */
@@ -87,10 +109,21 @@ select {
     gap: var(--gap, 1rem);
 }
 
+/* I modified this with the KP Responsive design made easy video */
 .container {
-    padding-inline: 2em;
+    /* padding-inline: 2em; */
     margin-inline: auto;
-    max-width: 80rem;
+    width: min(90%, 70.5rem);
+}
+
+.container--narrow {
+    max-width: 34rem;
+}
+
+/* from KP responsive design made easy video */
+section,
+footer {
+    padding: 3rem 0;
 }
 
 .sr-only {
@@ -132,8 +165,6 @@ body{
     background-size: cover; */
     /* ------------------------------------------------------------------------------------------- */
 
-    font-family: 'Lato', sans-serif;
-
     overflow-x: hidden;
 }
 
@@ -144,10 +175,8 @@ body{
 	width: 100%;
     margin-bottom: 1px;
 	padding: 5px 10px;
-	font-size: 16px;
 	text-align: center;
 	font-weight: bold;
-    font-family: Inter, sans-serif;
 }
 .virus-alert a {
 	color: #fff;
