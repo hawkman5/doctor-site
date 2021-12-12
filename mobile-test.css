@@ -98,6 +98,10 @@ h5 {
 /* Kevin Powell Scrimba */
 /* ------------------- */
 
+.text-center {
+    text-align: center;
+}
+
 .flex {
     display: flex;
     gap: var(--gap, 1rem); 
@@ -175,7 +179,6 @@ body{
 	width: 100%;
     margin-bottom: 1px;
 	padding: 5px 10px;
-	text-align: center;
 	font-weight: bold;
 }
 .virus-alert a {
@@ -217,6 +220,8 @@ body{
 /* If @supports doesnt work, it defaults to the above^ */
 
  /* This backdrop filter is currently not supported on all browsers...check to make sure this is still readable in different browsers, this @supports check to see if it is compatible with different browsers, if not it defaults to the .primary-navigation above this */
+
+ /* Backdrop filter is not supported on firefox so it defaults to line 211 .primary navigation background above */
 @supports (backdrop-filter: blur(1rem)) {
     .primary-navigation {
         background: hsl(0 0% 100% / 0.1);
