@@ -93,6 +93,14 @@ h5 {
     line-height: 1;
 }
 
+h2,
+h3,
+h4,
+h5,
+p {
+    margin-bottom: 1em;
+}
+
 /* ------------------- */
 /* Utility classes     */
 /* Kevin Powell Scrimba */
@@ -124,10 +132,21 @@ h5 {
     max-width: 34rem;
 }
 
+
+/* consider removing this and adding it tot he call-to-action-1 class and 2 class that already exists */
+.container--cta {
+    max-width: 19rem;
+}
+
 /* from KP responsive design made easy video */
+/* KP adds header here, but I need to fix the header a different way because the nav is not scaling down correctly */
 section,
 footer {
     padding: 3rem 0;
+}
+
+header {
+
 }
 
 .sr-only {
