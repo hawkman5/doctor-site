@@ -138,6 +138,16 @@ p {
     max-width: 19rem;
 }
 
+.cta-phone {
+    display: flex;
+    justify-content: center;
+    gap: 1.8rem;
+    background: hsl(var(--clr-white)/0.2);
+    border-radius: 30px;
+    margin-inline: 1.8rem;
+    padding-block: 0.5rem;
+}
+
 .split {
     display: flex;
     flex-direction: column;
@@ -157,10 +167,6 @@ p {
 section,
 footer {
     padding: 3rem 0;
-}
-
-header {
-
 }
 
 .sr-only {
