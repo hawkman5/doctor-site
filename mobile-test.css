@@ -153,6 +153,52 @@ p {
     flex-direction: column;
 }
 
+/* creating profile cards, this is adapted from that flexbox flex-grow responive tutorial */
+
+/* https://www.youtube.com/watch?v=S0a7PEOi0do */
+
+.profile-card {
+    display: flex;
+    flex-flow: row wrap;
+    background: hsl( var(--clr-white) );
+    border-radius: 30px;
+    margin-block: 1rem;
+
+}
+
+.profile-card > * {
+    padding: 10px;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+/* in order for border radius 50% to work, the supplied jpeg image must be cropped to a perfect square */
+.profile-card div:nth-of-type(1) img{
+    border-radius: 50%;
+}
+
+.profile-card div:nth-of-type(1){
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+.profile-card div:nth-of-type(2){
+   flex-grow: 1;
+   flex-shrink: 1;
+   flex-basis: 0;
+   padding-top: 3rem;
+}
+
+.profile-card div:nth-of-type(2) > * {
+    text-align: left;
+    margin-bottom: 0;
+}
+
+/* .profile-card div {
+
+} */
+
 /* Media Querie for .split class, KP vid at 34:20 */
 /* 40em is a guess, I can come back and change it later if it doesnt respond well to different sizes */
 @media (min-width: 40em) {
