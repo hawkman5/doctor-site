@@ -243,6 +243,10 @@ footer {
 
 /* --------------------------------------------- */
 
+.retire-bg-container {
+    background-image: url(images/beach-retire-centered.png);
+    background-size: cover;
+}
 /* My CSS */
 
 body{
