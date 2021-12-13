@@ -48,7 +48,7 @@ body {
 
 /* make images easier to work with */
 img,
-picutre {
+picture {
     max-width: 100%;
     display: block;
 }
@@ -137,6 +137,20 @@ p {
 .container--cta {
     max-width: 19rem;
 }
+
+.split {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Media Querie for .split class, KP vid at 34:20 */
+/* 40em is a guess, I can come back and change it later if it doesnt respond well to different sizes */
+@media (min-width: 40em) {
+    .split {
+        flex-direction: row;
+    }
+}
+    
 
 /* from KP responsive design made easy video */
 /* KP adds header here, but I need to fix the header a different way because the nav is not scaling down correctly */
