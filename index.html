@@ -7,7 +7,7 @@
     <!-- <link rel="stylesheet" href="styles.css"> -->
     <!-- This is the original Css link above -->
 
-    <link rel="stylesheet" href="mobile-test.css">
+    <link rel="stylesheet" href="styles/mobile-test.css">
     <link rel="icon" href="images/logo-white.png">
 
     <meta charset="UTF-8">
@@ -20,11 +20,12 @@
     <title>Kirk Maes, MD</title>
 </head>
 <body>
-    <div class="virus-alert text-center">
-        We are open for all your health care needs. Visitor restrictions still apply. <a href="https://www.sebastianrivermedical.org/services-directory/covid-19" target="_blank">Learn More</a>
-    </div>
-    <div class="retire-bg-container">
-        <header class="primary-header flex text-dark">
+    <header id="header-sticky">
+        <!-- This header used to have all of the custom classes linked, but I had to move the virus alert div inside so now those custom classes are in the second div below the virus alert -->
+        <div class="virus-alert text-center bg-red text-white">
+            We are open for all your health care needs. Visitor restrictions still apply. <a href="https://www.sebastianrivermedical.org/services-directory/covid-19" target="_blank">Learn More</a>
+        </div>
+        <div class="primary-header flex bg-white text-dark">
             <!-- <img src="images/beach-retire-centered.png" alt=""> -->
             <div class="logo">
                 <img src="images/logo3bgrm.png" alt="Coastal Joint & Sports Medicine Logo">
@@ -40,25 +41,26 @@
                     <li>
                         <a href="our-staff.html">Our Staff</a>
                     <li>
-                        <a href="services.html">Services</a>
+                        <a href="treatments-and-conditions.html">Treatments and Conditions</a>
                     <li>
-                        <a href="insurance.html">Insurance</a>
+                        <a href="insurance-and-pricing.html">Insurance and Pricing</a>
                     <li>
                         <a href="contact.html">Contact</a>
                 </ul>
             </nav>
-        </header>
-        <section class="call-to-action-1 text-white text-center">
-            <div class="container container--cta">
-                <h2>Fix What Hurts, Fast.</h2>
-                <p>Orthopedic surgeon in Sebastian, FL. Expert in orthopedics, sports medicine, rehabilitation, and patient care.</p>
-                <a href="tel:+17725815881" class="cta-phone text-white">
-                    <img src="images/phone.svg" alt="phone" class="text-white">
-                    (772) 581-5881
-                </a>
-            </div>
-        </section>
-    </div>
+        </div>
+    </header>
+    <section class="call-to-action-1 bg-dark-blue text-white text-center">
+        <div class="container container--cta">
+            <h2>Fix What Hurts, Fast.</h2>
+            <p>Orthopedic surgeon in Sebastian, FL. Expert in orthopedics, sports medicine, rehabilitation, and patient care.</p>
+            <a href="tel:+17725815881" class="cta-phone text-white">
+                <img src="images/phone.svg" alt="phone" class="text-white">
+                (772) 581-5881
+            </a>
+        </div>
+    </section>
+    
 
     <section class="mission bg-tan text-dark text-center">
         <div class="container">
