@@ -107,6 +107,10 @@ p {
     margin-bottom: 1em;
 }
 
+section h2 {
+    font-size: 2.3rem;
+}
+
 /* ------------------- */
 /* Utility classes     */
 /* Kevin Powell Scrimba */
@@ -146,21 +150,39 @@ p {
     height: 78.5vh;
     display: flex;
     align-items: center;
+    justify-content: center;
 
 }
 /* consider removing this and adding it tot he call-to-action-1 class and 2 class that already exists */
 .container--cta {
-    max-width: 19rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 20rem; */
+    background-color: hsl( var(--clr-dark-blue) / 0.05);
+    border-radius: 10px;
+    /* padding-inline: 400px; */
+    /* margin-inline: 50px; */
+
+    
+    
+}
+
+.container--cta p {
+    padding-inline: 5rem;
 }
 
 .cta-phone {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     gap: 1.8rem;
-    background: hsl(var(--clr-white)/0.2);
-    border-radius: 30px;
+    background: hsl(var(--clr-light-blue) );
+    border-radius: 7px;
     margin-inline: 1.8rem;
     padding-block: 0.5rem;
+    width: 20em;
 }
 
 .split {
@@ -365,6 +387,41 @@ body{
     font-size: clamp(1.8rem, 3vw, 3rem);
 }
 
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+}
+
+.footer div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.footer div > * {
+    margin-top: 0;
+    margin-bottom: 0.2rem;
+}
+
+.footer div h2 {
+    margin-bottom: 1rem;
+
+}
+
+.footer-contact > * {
+    text-decoration: none;
+    padding-bottom: 1.3rem;
+}
+
+.footer-contact h2 {
+    padding-bottom: 0;
+}
+
+.footer-contact > *:hover {
+    text-decoration: underline;
+}
+
 /* This is the mobile nav media query, kevin powell uses max-width for nav media queries */
 /* this used to be 50... change back */
 @media (max-width: 40em) { 
@@ -431,6 +488,21 @@ body{
 
     .primary-navigation a {
         font-size: clamp(1rem, 2vw, 3rem);
+    }
+
+    .footer {
+        margin-left: 30vw;
+    }
+
+}
+
+@media (min-width: 50em) {
+    .footer {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: top;
+        margin: 0 auto;
+        gap: 4rem;
     }
 }
 
