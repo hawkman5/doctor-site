@@ -17,38 +17,41 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-    <title>Our Staff</title>
+    <title>Kirk Maes, MD</title>
 </head>
 <body>
-    <div class="virus-alert text-center">
-        We are open for all your health care needs. Visitor restrictions still apply. <a href="https://www.sebastianrivermedical.org/services-directory/covid-19" target="_blank">Learn More</a>
-    </div>
-    <div class="retire-bg-container">
-        <header class="primary-header flex text-dark">
+    <header id="header-sticky">
+        <!-- This header used to have all of the custom classes linked, but I had to move the virus alert div inside so now those custom classes are in the second div below the virus alert -->
+        <div class="virus-alert text-center bg-red text-white">
+            We are open for all your health care needs. Visitor restrictions still apply. <a href="https://www.sebastianrivermedical.org/services-directory/covid-19" target="_blank">Learn More</a>
+        </div>
+        <div class="primary-header flex bg-light-gray text-dark">
             <!-- <img src="images/beach-retire-centered.png" alt=""> -->
-            <div class="logo">
+            <div class="logo ">
                 <img src="images/logo3bgrm.png" alt="Coastal Joint & Sports Medicine Logo">
                 <!-- I removed the "coastal joint & Sports medicine" temporarily -->
             </div>
             <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"></button>
             <!-- Add screen reader functionality to this from kevin powell video at 23 minutes -->
             <nav>
-                <ul id="primary-navigation" data-visible="false" class="primary-navigation flex text-dark">
+                <ul id="primary-navigation" data-visible="false" class="primary-navigation flex text-dark text-center">
                     <!-- data-visible="false" is a custom attribute that interacts with the navToggle javascript addEventListener function and in the css file where we change the visibility of the navbar -->
+
+                    <!-- FIX the NAMES OF THESE FILES TO MATCH -->
                     <li>
                         <a href="index.html">Home</a>
                     <li>
-                        <a href="our-staff.html">Our Staff</a>
+                        <a href="staff.html">Staff</a>
                     <li class="active">
-                        <a href="treatments-and-conditions.html">Treatments and Conditions</a>
+                        <a href="treatments-and-conditions.html">Treatments & Conditions</a>
                     <li>
-                        <a href="insurance-and-pricing.html">Insurance and Pricing</a>
+                        <a href="insurance.html">Insurance</a>
                     <li>
                         <a href="contact.html">Contact</a>
                 </ul>
             </nav>
-        </header>
-    </div>
+        </div>
+    </header>
 
 
     <script src="app.js"></script>
